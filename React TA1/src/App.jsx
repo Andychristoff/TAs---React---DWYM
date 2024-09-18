@@ -16,14 +16,14 @@ function App() {
           titulo="Milagros Briano"
           descripcion={"Mi novia"}
           personaAsignada={"Andrés Christoff"}
-          fechaInicio={"07/11/23"}
+          fechaInicio={"07/11/2023"}
           fechaFin={"Death"}
         />
         <Card
           titulo={"Andrés Christoff"}
           descripcion={"Yo"}
           personaAsignada={"Milagros Briano"}
-          fechaInicio={"07/11/23"}
+          fechaInicio={"07/11/2023"}
           fechaFin={"Death"}
         />
         <Card
