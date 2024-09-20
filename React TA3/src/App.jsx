@@ -14,8 +14,9 @@ function App() {
   return (
     <>
       <h1 className='arriba'>TA 3 React</h1>
-      <input type='text' id='userInput' value={userInfo} onChange={eventChange} placeholder='Escriba aqui'></input>
-      <div style={{color: "black", backgroundColor: "lightblue", display:'flex', flexDirection: "column"}}>
+      <input type='text' id='userInput' maxLength="900" value={userInfo} onChange={eventChange} placeholder='Escriba aqui'></input>
+      <div className='div'>
+        Texto del usuario:
         <p>{userInfo}</p>
       </div>
     </>
