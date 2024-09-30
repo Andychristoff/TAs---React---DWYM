@@ -17,17 +17,22 @@ function App() {
     setInput(change.target.value);
   } 
 
+  const handleDelete = (key) => {
+    const deleteItem = lista[key]
+    const newItems = lista.filter(item => item !== deleteItem);
+    setLista(newItems);
+  };
+
   const renderLista = () => {
     return (lista.map((Tarea, index) => 
-    <li key={index}>{Tarea}</li> ))
+    <li style={{placeItems:'center', placeContent:'center'}}key={index}> {Tarea} <button style={{fontSize: "30%", backgroundColor: 'red', margin:"auto", placeSelf:'center'}} onClick={() => handleDelete(index)}>X</button></li>))
   }
 
   
 
-
   return (
     <>
-      <h1 style={{}}>React TA6</h1>
+      <h1 style={{}}>React TA7</h1>
       <h2>Tareas para hacer:</h2>
       <div style={{display:'flex', flex: 1, flexDirection:"column", justifyContent: 'center'}}>
         <ul className='lista-container'>{renderLista()}</ul>
