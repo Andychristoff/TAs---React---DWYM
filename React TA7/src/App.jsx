@@ -25,7 +25,7 @@ function App() {
 
   const renderLista = () => {
     return (lista.map((Tarea, index) => 
-    <li style={{placeItems:'center', placeContent:'center'}}key={index}> {Tarea} <button style={{fontSize: "30%", backgroundColor: 'red', margin:"auto", placeSelf:'center'}} onClick={() => handleDelete(index)}>X</button></li>))
+    <li style={{placeItems:'center', placeContent:'center',position:"relative"}} key={index}> {Tarea} <button style={{fontSize: "30%", backgroundColor: 'red', margin:"auto", placeSelf:'center', position: 'absolute', left:-37, top:5}} onClick={() => handleDelete(index)}>X</button></li>))
   }
 
   
@@ -35,7 +35,7 @@ function App() {
       <h1 style={{}}>React TA7</h1>
       <h2>Tareas para hacer:</h2>
       <div style={{display:'flex', flex: 1, flexDirection:"column", justifyContent: 'center'}}>
-        <ul className='lista-container'>{renderLista()}</ul>
+        <ul style={{}} className='lista-container'>{renderLista()}</ul>
         <input 
         type="text" 
         id="input" 
